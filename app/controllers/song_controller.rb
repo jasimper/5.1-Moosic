@@ -26,7 +26,7 @@ class SongsController < ApplicationController
   end
 
   def update
-    @album = get_song
+    @song = get_song
       if @song.update_attributes(song_params)
         redirect_to @song
       else
@@ -35,7 +35,7 @@ class SongsController < ApplicationController
   end
 
   def destroy
-    @song = get_album
+    @song = get_song
     @song.destroy
     redirect_to songs_path
   end
@@ -46,7 +46,7 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title, :duration, :artist_id)
   end
 
-  def get_album
+  def get_song
     Song.find(params[:id])
   end
 
