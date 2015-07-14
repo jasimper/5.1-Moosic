@@ -31,7 +31,7 @@ class GenresController < ApplicationController
         redirect_to @genre
       else
         render :edit
-      end
+    end
   end
 
   def destroy

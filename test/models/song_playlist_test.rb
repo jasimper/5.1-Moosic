@@ -6,7 +6,7 @@ class SongPlaylistTest < ActiveSupport::TestCase
   end
 
   test "song_playlist belongs to song" do
-  assert_respond_to @song_playlist, :song
+    assert_respond_to @song_playlist, :song
   end
 
   test "song_playlist belongs to playlist" do

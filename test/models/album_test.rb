@@ -7,15 +7,15 @@ class AlbumTest < ActiveSupport::TestCase
   end
 
   test "album has many songs" do
-  assert_respond_to @album, :songs
+    assert_respond_to @album, :songs
   end
 
   test "album belongs to artist" do
-  assert_respond_to @album, :artist
+    assert_respond_to @album, :artist
   end
 
   test "album belongs to genre" do
-  assert_respond_to @album, :genre
+    assert_respond_to @album, :genre
   end
 
 end

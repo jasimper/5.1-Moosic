@@ -6,6 +6,7 @@ class CreateSongPlaylists < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_index :song_playlists, [:song_id, :playlist_id]
+    add_index :song_playlists, :song_id
+    add_index :song_playlists, :playlist_id
   end
 end

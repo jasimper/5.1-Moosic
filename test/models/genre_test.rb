@@ -6,6 +6,6 @@ class GenreTest < ActiveSupport::TestCase
   end
 
   test "genre has many albums" do
-  assert_respond_to @genre, :albums
+    assert_respond_to @genre, :albums
   end
 end

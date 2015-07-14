@@ -6,6 +6,6 @@ class PlaylistTest < ActiveSupport::TestCase
   end
 
   test "playlist has many songs" do
-  assert_respond_to @playlist, :songs
+    assert_respond_to @playlist, :songs
   end
 end
