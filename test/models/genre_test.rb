@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class GenreTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @genre = genres(:genre1)
+  end
+
+  test "genre has many albums" do
+  assert_respond_to @genre, :albums
+  end
 end
